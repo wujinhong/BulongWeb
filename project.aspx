@@ -42,13 +42,63 @@
 </div>
 <div id="nav1" class="common" style="height:38px;background-image:url(main_files/h_13_swpS.jpg);">
 <ul>
- <li><a href="index.html" title="回到首页">首页</a></li>
- <li><a href="aboutUs.html" title="公司简介">公司简介</a></li>
- <li><a href="project.html" title="案例展示">案例展示</a></li>
- <li><a href="contactUs.html" title="联系我们">联系我们</a></li>
+ <li><a href="index.aspx" title="回到首页">首页</a></li>
+ <li><a href="aboutUs.aspx" title="公司简介">公司简介</a></li>
+ <li><a href="project.aspx" title="案例展示">案例展示</a></li>
+ <li><a href="contactUs.aspx" title="联系我们">联系我们</a></li>
 </ul>
 </div>
-
+<div class="w1003">
+<div class="boxa" style="margin-top:0px;">
+	  <div class="w733 fl" style="height:720px;">
+			<div class="highlight_tip">
+				<ul class="tab clear">
+					<li class="tab1 navigation">
+					<a href="#" target="_self">
+					<img src="main_files/img0/1.png" width="120" height="90" /></a>
+					</li>
+					<li class="tab2 navigation">
+					<a href="#" target="_self">
+					<img src="main_files/img0/2.png" width="120" height="90" /></a>
+					</li>
+					<li class="tab3 navigation">
+					<a href="#" target="_self">
+					<img src="main_files/img0/3.png" width="120" height="90" /></a>
+					</li>
+					<li class="tab4 navigation">
+					<a href="#" target="_self">
+					<img src="main_files/img0/4.png" width="120" height="90" /></a>
+					</li>
+					<li class="tab5 navigation">
+					<a href="#" target="_self">
+					<img src="main_files/img0/5.png" width="120" height="90" /></a>
+					</li>
+					<li class="tab6 navigation">
+					<a href="#" target="_self">
+					<img src="main_files/img0/6.png" width="120" height="90" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="v_content_list">
+				<ul class="clear">
+					<li><a href="#" target="_self">
+					<img src="main_files/img0/1.png" width="960" height="720" /></a></li>
+					<li><a href="#" target="_self">
+					<img src="main_files/img0/2.png" width="960" height="720" /></a></li>
+					<li><a href="#" target="_self">
+					<img src="main_files/img0/3.png" width="960" height="720" /></a></li>
+					<li><a href="#" target="_self">
+					<img src="main_files/img0/4.png" width="960" height="720" /></a></li>
+					<li><a href="#" target="_self">
+					<img src="main_files/img0/5.png" width="960" height="720" /></a></li>
+					<li><a href="#" target="_self">
+					<img src="main_files/img0/6.png" width="960" height="720" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mainBusiness">小胖龙学颜色</div>
 <div class="common" style="height:380px;margin-top:20px;">
 	<span class="half_left">
     	<div class="center" style="width:440px;">
@@ -108,10 +158,10 @@
 
 <div class="common" id="menu2" style="height:40px; background-color:rgba(100,100,100,1.00);">
         <ul>
-             <li><a href="index.html" title="回到首页">首页</a></li>
-             <li><a href="aboutUs.html" title="关于我们">关于我们</a></li>
-             <li><a href="project.html" title="产品项目">产品项目</a></li>
-             <li><a href="contactUs.html" title="联系我们">联系我们</a></li>
+             <li><a href="index.aspx" title="回到首页">首页</a></li>
+             <li><a href="aboutUs.aspx" title="关于我们">关于我们</a></li>
+             <li><a href="project.aspx" title="产品项目">产品项目</a></li>
+             <li><a href="contactUs.aspx" title="联系我们">联系我们</a></li>
         </ul>
 </div>
 
@@ -123,6 +173,39 @@
 <script type="text/javascript">
 swfobject.registerObject("FlashID");
 
+$(document).ready( start );
+function start(){
+var picWidth = $(".v_content_list").width(); //获取显示焦点图的宽度
+var len = $(".v_content_list ul li").length; //获取焦点图个数
+var img_container = $(".v_content_list ul"); //定义变量
+var button_container = $(".highlight_tip li"); //定义变量
+var index = 0; //初始化index=0
+//设置tab按钮的背景透明度为0.5
+//$(".highlight_bg").css("opacity","0.5")
+//为tab按钮添加鼠标滑入事件，以显示相应的内容
+button_container.mouseenter(function() {
+	index = button_container.index(this);
+	showPics(index);
+}).eq(0).trigger("mouseenter");
+//计算出外围ul元素的宽度
+img_container.css("width",picWidth * (len));
+//鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
+$(".v_content_list").hover(function() {
+	clearInterval(picTimer);
+},function() {
+	picTimer = setInterval(function() {
+		showPics(index);
+		index++;
+		if(index == len) {index = 0;}
+	},3000); //代表自动播放的间隔，单位：毫秒，1秒=1000毫秒
+}).trigger("mouseleave");
+//显示图片函数，根据接收的index值显示相应的内容
+function showPics(index) { //默认效果
+	var nowLeft = -index*picWidth; //根据index值计算ul元素的left值
+	img_container.stop(true,false).animate({"left":nowLeft},300); //通过animate()调整ul元素滚动到计算出的position
+	button_container.eq(index).addClass("current").siblings().removeClass("current"); //为当前的tab按钮添加class="current"
+	}
+}
 </script>
 </body>
 </html>

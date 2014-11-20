@@ -5,6 +5,7 @@
 <title>深圳布龙仙游科技有限公司</title>
 <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
 <script src="main_files/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=27p5FPGULOWyicQ6fcZmSz8T"></script>
 <style type="text/css" media="screen">
 @import url("middle.css");
 </style>
@@ -42,10 +43,10 @@
 
 <div id="nav1" class="common" style="margin-top:-20px; height:38px;background-image:url(main_files/h_13_swpS.jpg);">
 <ul>
- <li><a href="index.html" title="回到首页">首页</a></li>
- <li><a href="aboutUs.html" title="公司简介">公司简介</a></li>
- <li><a href="project.html" title="案例展示">案例展示</a></li>
- <li><a href="contactUs.html" title="联系我们">联系我们</a></li>
+ <li><a href="index.aspx" title="回到首页">首页</a></li>
+ <li><a href="aboutUs.aspx" title="公司简介">公司简介</a></li>
+ <li><a href="project.aspx" title="案例展示">案例展示</a></li>
+ <li><a href="contactUs.aspx" title="联系我们">联系我们</a></li>
 </ul>
 </div>
 
@@ -76,28 +77,33 @@
   <!--<![endif]-->
 </object>
 </div>
-
-<div style="border-bottom: rgb(0,0,0) 2px dotted;">
-    <FONT color="#5a5a5a" face="'Microsoft YaHei'">
-    	<span style="color: rgb(0, 0, 0); line-height: 25px; font-size: 24px;"><B>公司简介</B></span>
-    </FONT>
-</div>
 <br>
 
-<div>
-    <div class="common" style="FONT-FAMILY: 微软雅黑; COLOR: rgb(0,0,0); FONT-SIZE: 20px;height:60px;">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市布龙仙游科技有限公司成立于2014年1月，秉承以移动端游戏创新研发为主的多元化研发和经营。旨在科技高速发展的当今，迅速成为立足中国面向世界的国际化游戏开发企业。紧抓社会潮流，以中国大文化为背景，不断研发出引领主流的新颖游戏产品。
+<div style="font-size:24px;">
+    <div class="common" style="height:50px;">
+    &nbsp;&nbsp;联络地址：深圳市龙岗区坪地镇香园新村50栋四楼
+    </div>
+    <div class="common" style="height:50px;">
+    &nbsp;&nbsp;公交站：香园新村
+    </div>
+    <div class="common" style="height:50px;">
+    &nbsp;&nbsp;电话:13510983054;&nbsp;15999643343;&nbsp;18988763868
+    </div>
+    <div class="common" style="height:50px;">
+	&nbsp;&nbsp;QQ:&nbsp;597785841;&nbsp;44468310;&nbsp;958586056
+    </div>
+    <div class="common" style="height:60px;">
+	&nbsp;&nbsp;办公时间：周一   至   周五   : 9:00am - 6:00pm
     </div>
 </div>
-
-<br><br>
+<div id="container" style="height:600px;width:100%;"></div>
 
 <div class="common" id="menu2" style="height:40px; background-color:rgba(100,100,100,1.00);">
         <ul>
-             <li><a href="index.html" title="回到首页">首页</a></li>
-             <li><a href="aboutUs.html" title="关于我们">关于我们</a></li>
-             <li><a href="project.html" title="产品项目">产品项目</a></li>
-             <li><a href="contactUs.html" title="联系我们">联系我们</a></li>
+             <li><a href="index.aspx" title="回到首页">首页</a></li>
+             <li><a href="aboutUs.aspx" title="关于我们">关于我们</a></li>
+             <li><a href="project.aspx" title="产品项目">产品项目</a></li>
+             <li><a href="contactUs.aspx" title="联系我们">联系我们</a></li>
         </ul>
 </div>
 
@@ -108,6 +114,23 @@
 
 <script type="text/javascript">
 swfobject.registerObject("FlashID");
+var map = new BMap.Map("container");          // 创建地图实例  
+var point = new BMap.Point(114.297078,22.777556);  // 创建点坐标  
+map.centerAndZoom(point, 25);                 // 初始化地图，设置中心点坐标和地图级别
+var marker = new BMap.Marker(point);        // 创建标注    
+map.addOverlay(marker);
+map.enableScrollWheelZoom();
+map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+map.enableKeyboard();//启用键盘上下左右键移动地图
+
+var opts = {    
+ width : 250,     // 信息窗口宽度    
+ height: 120,     // 信息窗口高度    
+ title : "深圳布龙仙游科技有限公司"  // 信息窗口标题   
+}    
+var infoWindow = new BMap.InfoWindow("<br>联络地址：深圳市龙岗区坪地镇香园新村50栋四楼<br><br>公交站：香园新村", opts);  // 创建信息窗口对象    
+map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
 
 </script>
 </body>

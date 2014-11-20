@@ -1,4 +1,23 @@
 @charset "utf-8";
+.body{
+	background-color: rgba(241,243,244,1.00);
+	margin-top: 0;
+}
+.banner{
+	border-top: rgb(150,150,150) 0.2px solid;
+	border-left: rgb(150,150,150) 0.2px solid;
+	border-right: rgb(150,150,150) 0.2px solid;
+	background-color:rgba(200,237,241,0.4);
+}
+
+.content{
+	border-bottom: rgb(150,150,150) 0.2px solid;
+	border-top: rgb(150,150,150) 0.2px solid;
+	border-left: rgb(150,150,150) 0.2px solid;
+	border-right: rgb(150,150,150) 0.2px solid;
+	background-color:rgba(223,247,248,0.4);
+}
+
 .common{
 	position:relative;
 	margin-left:auto;
@@ -36,7 +55,6 @@
 }
 #nav1 li a:hover{
 	color: rgba(255,255,0,1.00);
-	text-decoration: underline;
 	background-image:url(main_files/h_14_bvXX.jpg);
 	width: 200px;
 	background-repeat:no-repeat;
@@ -80,7 +98,6 @@
 	font-size: x-large;
 }
 #menu2 li a:hover{
-	text-decoration: underline;
 	background-color:rgba(0,0,0,1.00);
 	width: 200px;
 	background-repeat:no-repeat;
