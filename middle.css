@@ -5,6 +5,11 @@
 	margin-right:auto;
 	width: 960px;
 }
+.center{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 #nav1 ul{
 	width: 960px;
@@ -34,7 +39,6 @@
 	text-decoration: underline;
 	background-image:url(main_files/h_14_bvXX.jpg);
 	width: 200px;
-	//background:url(main_files/h_14_bvXX.jpg);
 	background-repeat:no-repeat;
 	background-position:center;
 }
@@ -76,11 +80,9 @@
 	font-size: x-large;
 }
 #menu2 li a:hover{
-	color: rgba(255,255,0,1.00);
 	text-decoration: underline;
 	background-color:rgba(0,0,0,1.00);
 	width: 200px;
-	//background:url(main_files/h_14_bvXX.jpg);
 	background-repeat:no-repeat;
 	background-position:center;
 }

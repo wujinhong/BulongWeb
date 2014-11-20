@@ -55,13 +55,13 @@ a:hover{
 	top:5px;
 	cursor:pointer;
 }
-ul li.tab1{ left:10px }
-ul li.tab2{ left:140px }
-ul li.tab3{ left:270px }
-ul li.tab4{ left:400px }
-ul li.tab5{ left:530px }
-ul li.tab6{ left:660px }
-ul li.tab7{ left:790px }
+ul li.tab1{ left:50px }
+ul li.tab2{ left:200px }
+ul li.tab3{ left:350px }
+ul li.tab4{ left:500px }
+ul li.tab5{ left:650px }
+ul li.tab6{ left:800px }
+ul li.tab7{ left:950px }
 .v_content_list ul{
 	position:absolute;
 }
@@ -89,3 +89,12 @@ li.current img{
 }
 
 div.w733{ position:relative;left:0px;top:0px;}
+
+.half_left{
+	width:480px;
+	float:left;
+}
+.half_right{
+	width:480px;
+	float:right;
+}
