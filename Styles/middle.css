@@ -143,3 +143,10 @@ ul,ol{list-style:none;}
 .project-list ul li a{
 	color:#3399ff;
 }
+.page { margin:20px; }
+.page a {
+	margin:0 5px;
+	padding:1px 3px;
+	display:inline-block;
+	border:1px solid #000;
+}

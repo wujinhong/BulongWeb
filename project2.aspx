@@ -81,39 +81,35 @@
   	<div class="project-list">
     	<ul>
       	<li>
-        	<a href="main_files/swf/1.swf" target="_blank"><img src="main_files/swf/1.png" width="440" height="330" /></a>
-          <a href="main_files/swf/1.swf" target="_blank">卡仕达.车载智能信息系统片头</a>
-        </li>
-      	<li>
-        	<a href="main_files/swf/2.swf" target="_blank"><img src="main_files/swf/2.jpg" width="440" height="330" /></a>
-          <a href="main_files/swf/2.swf" target="_blank">在路上</a>
-        </li>
-      	<li>
-        	<a href="main_files/swf/3.swf" target="_blank"><img src="main_files/swf/3.jpg" width="440" height="330" /></a>
-          <a href="main_files/swf/3.swf" target="_blank">华润煤业.2012年春节MV</a>
-        </li>
-      	<li>
-        	<a href="main_files/swf/4.swf" target="_blank"><img src="main_files/swf/4.jpg" width="440" height="330" /></a>
-          <a href="main_files/swf/4.swf" target="_blank">卡仕达</a>
-        </li>
-      	<li>
-        	<a href="main_files/swf/5.swf" target="_blank"><img src="main_files/swf/5.jpg" width="440" height="330" /></a>
-          <a href="main_files/swf/5.swf" target="_blank">彩信大头贴</a>
-        </li>
-      	<li>
-        	<a href="main_files/swf/6.swf" target="_blank"><img src="main_files/swf/6.jpg" width="440" height="330" /></a>
-          <a href="main_files/swf/6.swf" target="_blank">网无忧动画</a>
-        </li>
-      	<li>
         	<a href="main_files/swf/7.swf" target="_blank" title="模块演示"><img src="main_files/swf/7.png" width="440" height="330" /></a>
           <a href="http://zl.qq.com" target="_blank" title="游戏主页">大型ARPG游戏</a>
         </li>
+      	<li>
+        	<a href="#" target="_blank" title="模块演示"><img src="main_files/swf/8.png" width="440" height="330" /></a>
+          <a href="#" target="_blank" title="">湖南娄底移动-数字家庭</a>
+        </li>
+      	<li>
+        	<a href="#" target="_blank" title="模块演示"><img src="main_files/swf/9.png" width="440" height="330" /></a>
+          <a href="#" target="_blank" title="">小学英语素材</a>
+        </li>
+
+      	<li>
+        	<a href="#" target="_blank" title="模块演示"><img src="main_files/swf/10.jpg" width="440" height="330" /></a>
+          <a href="#" target="_blank" title="">肇庆点餐系统</a>
+        </li>
+
+      	<li>
+        	<a href="#" target="_blank" title="模块演示"><img src="main_files/swf/11.png" width="440" height="330" /></a>
+          <a href="#" target="_blank" title="">中华职能家居</a>
+        </li>
+
       </ul>
     </div>
   </div>
+  
   <div class="common" style="font-size:24px;margin-left:413px;margin-bottom:20px;">
-  	<span class="page"> 1 </span>
-    <span class="page"><a href="project2.html"> 2 </a> </span>
+  	<span class="page"><a href="project.html"> 1 </a></span>
+    <span class="page"> 2 </span>
   </div>
   
   <div class="footer-nav">
