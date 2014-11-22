@@ -104,10 +104,6 @@
         	<a href="main_files/swf/6.swf" target="_blank"><img src="main_files/swf/6.jpg" width="440" height="330" /></a>
           <a href="main_files/swf/6.swf" target="_blank">网无忧动画</a>
         </li>
-      	<li>
-        	<a href="main_files/swf/7.swf" target="_blank" title="模块演示"><img src="main_files/swf/7.png" width="440" height="330" /></a>
-          <a href="http://zl.qq.com" target="_blank" title="游戏主页">大型ARPG游戏</a>
-        </li>
       </ul>
     </div>
   </div>
