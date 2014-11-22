@@ -1,3 +1,4 @@
+@charset "utf-8";
 img{
 	margin:0;
 	padding:0;
@@ -40,28 +41,19 @@ a:hover{
 	overflow:hidden;
 }
 .highlight_tip{
-	position:relative;
 	position:absolute;
 	width:960px;
 	padding:2px 0 0;
 	z-index:10;
 	left:0;
 	bottom:0;
-	height:90px;
 }
 .highlight_tip ul li{
-	position:absolute;
-	z-index:20;
-	top:5px;
-	cursor:pointer;
+	float:left;
+	margin-left:30px;
+	margin-bottom:15px;
+	height:94px;
 }
-ul li.tab1{ left:50px }
-ul li.tab2{ left:200px }
-ul li.tab3{ left:350px }
-ul li.tab4{ left:500px }
-ul li.tab5{ left:650px }
-ul li.tab6{ left:800px }
-ul li.tab7{ left:950px }
 .v_content_list ul{
 	position:absolute;
 }
@@ -73,8 +65,8 @@ ul li.tab7{ left:950px }
 }
 li.navigation img{
 	width:120px;
-	border:1px #fff solid;
-	position:absolute;
+	border:2px #fff solid;
+	/*position:absolute;*/
 	opacity:0.5;
 	-moz-opacity:0.5;
 	-webkit-opacity:0.5;
@@ -89,12 +81,3 @@ li.current img{
 }
 
 div.w733{ position:relative;left:0px;top:0px;}
-
-.half_left{
-	width:480px;
-	float:left;
-}
-.half_right{
-	width:480px;
-	float:right;
-}
