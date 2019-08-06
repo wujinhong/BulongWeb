@@ -107,7 +107,7 @@
       </ul>
     </div>
   </div>
-  <div class="common" style="font-size:24px;margin-left:413px;margin-bottom:20px;">
+  <div class="common" style="width:250px;font-size:24px;margin-left:413px;margin-bottom:20px;">
   	<span class="page"> 1 </span>
     <span class="page"><a href="project2.html"> 2 </a> </span>
   </div>
